@@ -1,0 +1,27 @@
+public class Task5 {
+    public static void main(String[] args) {
+
+        // Даны два числа.Если квадратный корень из второго числа меньше первого числа,
+        // то увеличить второе число в пять раз.
+
+        System.out.println("Введите два числа:");
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        sc.close();
+
+        double sqrt1 = Math.sqrt(a);
+        System.out.println(sqrt1);
+        double sqrt2 = Math.sqrt(b);
+        System.out.println(sqrt2);
+
+        if (sqrt2 <= a) {
+            System.out.println(b * 5);
+        } else {
+            System.out.println("Квадратный корень из второго числа больше первого числа");
+        }
+
+
+
+    }
+}
