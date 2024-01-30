@@ -1,0 +1,21 @@
+public class Task3 {
+    public static void main(String[] args) {
+        // Дано двузначное число.Определить:остаток от деления десятков на единицы,
+        // результат деления единиц на десятки
+
+        System.out.println("Введите двузначное число:");
+
+        Scanner sc = new Scanner(System.in);
+        int number = sc.nextInt();
+        double units = number % 10;
+        System.out.println(units);
+        double decimals = number / 10;
+        System.out.println(decimals);
+        double remainder = (decimals / units) % 10;
+
+
+        System.out.println("Остаток от деления десятков на единицы " + remainder);
+        System.out.println("Результат деления единиц на десятки " + (units / decimals));
+
+    }
+}
