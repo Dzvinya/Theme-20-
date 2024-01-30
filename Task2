@@ -1,0 +1,25 @@
+public class Task2 {
+    public static void main(String[] args) {
+        //Даны радиус круга и сторона  квадрата.У  какой фигуры площадь больше?
+        //Площадь круга: число ПИ * r2
+        //Площадь квадрата: сторона2 (в квадрате)
+        System.out.println("Введите радиус круга и сторону квадрата");
+        Scanner  sc =  new Scanner(System.in);
+        int r = sc.nextInt();
+        int s = sc.nextInt();
+        double S1 = Math.PI * Math.pow(r,2);
+        System.out.println("Площадь круга = " + S1);
+        double S2 = Math.pow(s,2);
+        System.out.println("Площадь квадрата = " + S2);
+
+        if (S1 > S2) {
+            System.out.println("Площадь круга больше Площади квадрата");
+
+        } else {
+            System.out.println("Площадь квадрата больше Площади круга");
+        }
+
+
+
+    }
+}
